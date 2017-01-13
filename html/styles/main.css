@@ -153,7 +153,8 @@ nav {
   display: inline-block;
   position: relative;
   font-size: 0;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  overflow: hidden; }
   .container * {
     font-size: 14px; }
 
@@ -268,6 +269,18 @@ div.main {
     line-height: 18px;
     border-top: red 5px solid;
     min-height: 100%; }
+    div.main .content-container h1 {
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 40px; }
+    div.main .content-container h2 {
+      color: #555;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 30px; }
+    div.main .content-container p {
+      color: #666;
+      text-indent: 2em; }
 
 footer {
   border-top: 1px #ccc solid;
