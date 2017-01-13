@@ -1,0 +1,39 @@
+{
+    "about-us": true,
+    "submenu": [
+        {
+            "url": "about_us.html",
+            "text": "中心簡介"
+        },
+        {
+            "url": "counselling.html",
+            "text": "熱線 / 個案輔導",
+            "active": true
+        },
+        {
+            "url": "group_counselling.html",
+            "text": "小組輔導"
+        },
+        {
+            "url": "service.html",
+            "text": "社區教育服務"
+        },
+        {
+            "url": "support.html",
+            "text": "專業支援"
+        },
+        {
+            "url": "crime.html",
+            "text": "中介防騙諮詢"
+        }
+    ],
+    "content": [
+        "<h1>熱線 / 個案輔導</h1>",
+        "<ul>",
+        "<li>債務問題諮詢及輔導</li>",
+        "<li>破產諮詢及輔導</li>",
+        "<li>情緒支援、人際關係及家庭關係輔導</li>",
+        "<li>更多債務輔導</li>",
+        "</ul>"
+    ]
+}

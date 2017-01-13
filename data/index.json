@@ -1,0 +1,41 @@
+{
+    "homepage": true,
+    "submenu": [
+        {
+            "url": "#",
+            "text": "1",
+            "active": true
+        },
+        {
+            "url": "#",
+            "text": "2"
+        }
+    ],
+    "photo-slider": [
+        "./img/FDCC_TWGHs.jpg",
+        "./img/FDCC_TWGHs.jpg",
+        "./img/FDCC_TWGHs.jpg"
+    ],
+    "news-feed": [
+        {
+            "title": "1ABC",
+            "content": "1Content",
+            "img-url": "./img/FDCC_TWGHs.jpg"
+        },
+        {
+            "title": "1ABC",
+            "content": "1Content",
+            "img-url": "./img/FDCC_TWGHs.jpg"
+        },
+        {
+            "title": "1ABC",
+            "content": "1Content",
+            "img-url": "./img/FDCC_TWGHs.jpg"
+        },
+        {
+            "title": "1ABC",
+            "content": "1Content",
+            "img-url": "./img/FDCC_TWGHs.jpg"
+        }
+    ]
+}

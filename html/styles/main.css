@@ -21,15 +21,21 @@ header {
   letter-spacing: 0;
   display: inline-block;
   box-sizing: border-box;
-  padding: 5px 0; }
+  padding: 5px 0;
+  z-index: 2; }
   header .logo {
     height: 90px;
-    width: 290px;
+    width: 210px;
     display: inline-block;
     box-sizing: border-box;
-    z-index: 1; }
+    z-index: 5;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    overflow: hidden; }
     header .logo a {
-      display: block; }
+      display: block;
+      cursor: pointer; }
     header .logo img {
       height: 90px;
       width: auto; }
@@ -39,8 +45,6 @@ header {
     width: 100%;
     min-width: 250px;
     height: 90px;
-    padding-left: 290px;
-    margin-left: -290px;
     box-sizing: border-box;
     position: relative;
     z-index: 0; }
@@ -86,7 +90,8 @@ nav {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 0;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  background: #fafafa; }
   nav ul {
     margin: 14px 0 24px 0;
     display: inline-block; }
@@ -101,7 +106,7 @@ nav {
         display: inline-block;
         border-bottom: 2px transparent solid; }
       nav ul li.active > a, nav ul li:hover > a {
-        border-bottom: 2px #ccc solid; }
+        border-bottom: 2px #aaa solid; }
       nav ul li.active > a:before {
         content: '';
         position: absolute;
@@ -193,8 +198,8 @@ h3 {
     vertical-align: top;
     box-sizing: border-box;
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 148px;
+    height: 148px;
     background-size: cover;
     background-position: center;
     background-color: #ccc; }
@@ -208,7 +213,8 @@ div.main {
   padding-top: 197px;
   margin-top: -197px;
   font-size: 0;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  z-index: 1; }
   div.main .photo-slider {
     background: #5abfb6;
     width: 100%;
@@ -266,3 +272,10 @@ div.main {
 footer {
   border-top: 1px #ccc solid;
   padding: 5px; }
+
+div.bx-wrapper {
+  position: absolute;
+  height: 100%; }
+
+div.bx-viewport, ul.bxslider, li.bx-clone {
+  height: 100%; }

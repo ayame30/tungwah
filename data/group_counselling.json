@@ -1,0 +1,39 @@
+{
+    "about-us": true,
+    "submenu": [
+        {
+            "url": "about_us.html",
+            "text": "中心簡介"
+        },
+        {
+            "url": "counselling.html",
+            "text": "熱線 / 個案輔導"
+        },
+        {
+            "url": "group_counselling.html",
+            "text": "小組輔導",
+            "active": true
+        },
+        {
+            "url": "service.html",
+            "text": "社區教育服務"
+        },
+        {
+            "url": "support.html",
+            "text": "專業支援"
+        },
+        {
+            "url": "crime.html",
+            "text": "中介防騙諮詢"
+        }
+    ],
+    "content": [
+        "<h1>小組輔導</h1>",
+        "<ul>",
+        "<li>情緒管理小組</li>",
+        "<li>理財教育小組</li>",
+        "<li>破產適應小組</li>",
+        "<li>債務人士家庭支援小組</li>",
+        "</ul>"
+    ]
+}

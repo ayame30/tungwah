@@ -1,0 +1,36 @@
+{
+    "about-us": true,
+    "submenu": [
+        {
+            "url": "about_us.html",
+            "text": "中心簡介"
+        },
+        {
+            "url": "counselling.html",
+            "text": "熱線 / 個案輔導"
+        },
+        {
+            "url": "group_counselling.html",
+            "text": "小組輔導"
+        },
+        {
+            "url": "service.html",
+            "text": "社區教育服務"
+        },
+        {
+            "url": "support.html",
+            "text": "專業支援",
+            "active": true
+        },
+        {
+            "url": "crime.html",
+            "text": "中介防騙諮詢"
+        }
+    ],
+    "content": [
+        "<h1>專業支援</h1>",
+        "<ul>",
+        "<li>支援前線社工協助個案處理財務問題</li>",
+        "</ul>"
+    ]
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Tung Wah</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/"><img src="./img/FDCC_TWGHs.jpg" /></a></div>
+        <div class="options">
+            <div class="search-box-container">
+                <input type="text" name="search-input" class="search-textbox"/>
+                <button class="search-button"><span class="fa fa-search"></span></button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="{{#if homepage}}active{{/if}}"><a href="/">首頁</a></li>
+            <li class="{{#if about-us}}active{{/if}} dropdown"><a href="#">中心介紹</a>
+                <ul class="dropdown-item">
+                    <li><a href="about_us.html">中心簡介</a></li>
+                    <li><a href="counselling.html">熱線 / 個案輔導</a></li>
+                    <li><a href="group_counselling.html">小組輔導</a></li>
+                    <li><a href="service">社區教育服務</a></li>
+                    <li><a href="support">專業支援</a></li>
+                    <li><a href="crime">中介防騙諮詢</a></li>
+                </ul>
+            </li>
+            <li class="{{#if tips}}active{{/if}}" ><a href="tips.html">理財錦囊</a></li>
+            <li class="{{#if program}}active{{/if}}"><a href="program.html">創業共融 青年創業計劃</a></li>
+            <li class="{{#if contact}}active{{/if}}"><a href="contact.html">聯絡方法</a></li>
+            <li class="{{#if download}}active{{/if}}"><a href="download.html">表格下載</a></li>
+            <li class="{{#if reference}}active{{/if}}"><a href="reference.html">相關連結</a></li>
+        </ul>
+    </nav>
+    {{#if homepage}}
+    <div class="main">
+        <div class="photo-slider">
+            <ul class="bxslider">
+                {{#each photo-slider}}
+                <li style="background-image: url({{this}})"></li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="container">
+            <div class="news-feed">
+                {{#each news-feed}}
+                <div class="card">
+                    <div class="content">
+                        <h3>{{title}}</h3>
+                        <span>{{content}}</span>
+                    </div>
+                    <div class="img" style="background-image: url({{img-url}})"></div>
+                </div>
+                {{/each}}
+            </div>
+            <div class="sub-menu">
+                <ul>
+                    {{#each submenu}}
+                    <li class="{{#if active}}active{{/if}}"><a href="{{url}}">{{text}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <div class="main">
+        <div class="container">
+            <div class="sub-menu">
+                <ul>
+                    {{#each submenu}}
+                    <li class="{{#if active}}active{{/if}}"><a href="{{url}}">{{text}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="content-container">
+            {{#each content}}
+                {{{this}}}
+            {{/each}}
+            </div>
+        </div>
+    </div>
+    {{/if}}
+    <footer>Copyright <span class="fa fa-copyright"></span>2016.</footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
