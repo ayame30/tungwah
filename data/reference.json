@@ -1,3 +1,13 @@
 {
-    "reference": true
+    "reference": true,
+    "content": [
+        "<h1>相關連結</h1>",
+        "<ul>",
+        "<li>破產管理署 (<a herf=\"http://www.oro.gov.hk/cht/home/home.htm\">http://www.oro.gov.hk/cht/home/home.htm</a>)</li>",
+        "<li>金融管理局 (<a herf=\"http://www.info.gov.hk/hkma/\">http://www.info.gov.hk/hkma/</a>)</li>",
+        "<li>香港銀行公會 (<a herf=\"http://www.hkab.org.hk/DisplayArticleAction.do?sid=2&ss=1&lang=b5\">http://www.hkab.org.hk/DisplayArticleAction.do?sid=2&ss=1&lang=b5</a>)</li>",
+        "<li>香港財務策劃師學會 (<a herf=\"http://www.ifphk.org/\">http://www.ifphk.org/</a>)</li>",
+        "<li>投資者教育中心 (<a herf=\"http://www.hkiec.hk/web/tc/life-events-and-you/index.html\">http://www.hkiec.hk/web/tc/life-events-and-you/index.html</a>)</li>",
+        "</ul>"
+    ]
 }

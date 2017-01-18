@@ -88,10 +88,13 @@ header {
 
 nav {
   border-top: 1px solid #ccc;
+  border-left: 3px solid #FA8D62;
+  border-right: 3px solid #FA8D62;
   border-bottom: 1px solid #ccc;
   padding: 0;
   letter-spacing: 0.05em;
-  background: #fafafa; }
+  background: #2B616D;
+  box-shadow: 0 0 5px #2B616D; }
   nav ul {
     margin: 14px 0 24px 0;
     display: inline-block; }
@@ -100,20 +103,21 @@ nav {
       box-sizing: border-box;
       position: relative;
       line-height: 20px; }
-      nav ul li a {
+      nav ul li a, nav ul li a:active, nav ul li a:hover, nav ul li a:visited {
         box-sizing: border-box;
         margin: 10px 20px 0 20px;
         display: inline-block;
-        border-bottom: 2px transparent solid; }
+        border-bottom: 2px transparent solid;
+        color: #fff; }
       nav ul li.active > a, nav ul li:hover > a {
-        border-bottom: 2px #aaa solid; }
+        border-bottom: 2px transparent solid; }
       nav ul li.active > a:before {
         content: '';
         position: absolute;
         width: 6px;
         height: 6px;
         border-radius: 10px;
-        background-color: red;
+        background-color: #FA8D62;
         display: block;
         left: 50%;
         margin-left: -3px;
@@ -127,7 +131,7 @@ nav {
     margin-top: 0;
     margin-left: -50px;
     top: 100%;
-    background: #fff;
+    background: #B2DBD5;
     padding: 0;
     width: 150%;
     z-index: 1;
@@ -139,13 +143,13 @@ nav {
       width: auto;
       margin: 7px 0;
       padding: 0;
-      background: #fff;
       text-align: center; }
-      nav ul.dropdown-item li a {
+      nav ul.dropdown-item li a, nav ul.dropdown-item li a:hover, nav ul.dropdown-item li a:visited, nav ul.dropdown-item li a:active {
+        color: #555;
         display: inline-block;
         border-bottom: transparent 2px solid; }
       nav ul.dropdown-item li.active a, nav ul.dropdown-item li:hover a {
-        border-bottom: #ccc 2px solid; }
+        border-bottom: transparent 2px solid; }
 
 .container {
   width: 100%;
@@ -167,6 +171,7 @@ h3 {
 
 .card {
   border: #ccc 1px solid;
+  box-shadow: 0 0 5px #B2DBD5;
   height: auto;
   height: 150px;
   width: 100%;
@@ -187,8 +192,11 @@ h3 {
     letter-spacing: 0.1em;
     text-overflow: ellipsis; }
     .card .content h3 {
-      height: 20px;
-      text-overflow: ellipsis; }
+      height: 30px;
+      font-size: 20px;
+      line-height: 25px;
+      text-overflow: ellipsis;
+      border-bottom: 1px solid #FA8D62; }
     .card .content span {
       display: inline-block;
       text-overflow: ellipsis;
@@ -217,10 +225,11 @@ div.main {
   letter-spacing: 0;
   z-index: 1; }
   div.main .photo-slider {
-    background: #5abfb6;
+    background: #B2DBD5;
     width: 100%;
     padding-bottom: 25%;
-    position: relative; }
+    position: relative;
+    box-shadow: #2B616D 0 0 13px; }
   div.main .news-feed {
     width: 100%;
     box-sizing: border-box;
@@ -238,9 +247,11 @@ div.main {
     div.main .sub-menu ul {
       border: #ccc 1px solid;
       width: 100%;
+      background: #fff;
       display: inline-block;
       box-sizing: border-box;
-      padding: 5px; }
+      padding: 5px;
+      box-shadow: 0 0 10px #B2DBD5; }
       div.main .sub-menu ul li {
         text-decoration: none;
         list-style: none;
@@ -249,11 +260,26 @@ div.main {
         margin: 30px 0; }
         div.main .sub-menu ul li a {
           border-bottom: 2px transparent solid; }
-        div.main .sub-menu ul li.active a {
-          border-bottom: 2px red solid;
+        div.main .sub-menu ul li.active > a {
+          border-bottom: 2px #FA8D62 solid;
           line-height: 16px;
           padding: 3px 0;
           position: relative; }
+        div.main .sub-menu ul li ul {
+          border: none;
+          padding: 15px 5px 5px 5px; }
+          div.main .sub-menu ul li ul li {
+            margin: 10px 0; }
+            div.main .sub-menu ul li ul li a {
+              border-bottom: 2px transparent solid;
+              color: #555; }
+            div.main .sub-menu ul li ul li.active a {
+              border-bottom: 2px #eaa solid;
+              line-height: 16px;
+              padding: 3px 0;
+              position: relative; }
+        div.main .sub-menu ul li:not(.active) ul.toggle-menu {
+          display: none; }
   div.main .content-container {
     margin-top: 25px;
     width: 100%;
@@ -267,7 +293,7 @@ div.main {
     letter-spacing: 0.1em;
     font-size: 14px;
     line-height: 18px;
-    border-top: red 5px solid;
+    border-top: #FA8D62 5px solid;
     min-height: 100%; }
     div.main .content-container h1 {
       font-size: 30px;
@@ -283,7 +309,13 @@ div.main {
       text-indent: 2em; }
 
 footer {
+  background: #2B616D;
+  color: #eee;
   border-top: 1px #ccc solid;
+  border-bottom: 3px #FA8D62 solid;
+  padding: 5px;
+  box-shadow: 0px -1px 3px 0px #B2DBD5;
+  font-size: 12px;
   padding: 5px; }
 
 div.bx-wrapper {
@@ -292,3 +324,45 @@ div.bx-wrapper {
 
 div.bx-viewport, ul.bxslider, li.bx-clone {
   height: 100%; }
+
+.contact-tel {
+  border: 3px #B2DBD5 solid;
+  width: 250px;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  padding: 10px 0; }
+  .contact-tel .text {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    color: #2B616D;
+    z-index: 2; }
+  .contact-tel .tel {
+    color: #2B616D;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    z-index: 2; }
+  .contact-tel:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: #fff;
+    height: 70%;
+    top: 15%;
+    left: -3px; }
+  .contact-tel:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: #fff;
+    height: 70%;
+    top: 15%;
+    right: -3px; }

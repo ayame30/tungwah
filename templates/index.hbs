@@ -19,7 +19,7 @@
     <nav>
         <ul>
             <li class="{{#if homepage}}active{{/if}}"><a href="/">首頁</a></li>
-            <li class="{{#if about-us}}active{{/if}} dropdown"><a href="#">中心介紹</a>
+            <li class="{{#if intro}}active{{/if}} dropdown"><a href="#">中心介紹</a>
                 <ul class="dropdown-item">
                     <li><a href="about_us.html">中心簡介</a></li>
                     <li><a href="counselling.html">熱線 / 個案輔導</a></li>
@@ -74,6 +74,22 @@
                     {{#each submenu}}
                     <li class="{{#if active}}active{{/if}}"><a href="{{url}}">{{text}}</a></li>
                     {{/each}}
+                    <li class="{{#if homepage}}active{{/if}}"><a href="/">首頁</a></li>
+                    <li class="{{#if intro}}active{{/if}} toggle-button"><a href="#">中心介紹</a>
+                        <ul class="toggle-menu">
+                            <li class="{{#if about_us}}active{{/if}}"><a href="about_us.html">中心簡介</a></li>
+                            <li class="{{#if counselling}}active{{/if}}"><a href="counselling.html">熱線 / 個案輔導</a></li>
+                            <li class="{{#if group_counselling}}active{{/if}}"><a href="group_counselling.html">小組輔導</a></li>
+                            <li class="{{#if service}}active{{/if}}"><a href="service.html">社區教育服務</a></li>
+                            <li class="{{#if support}}active{{/if}}"><a href="support.html">專業支援</a></li>
+                            <li class="{{#if crime}}active{{/if}}"><a href="crime.html">中介防騙諮詢</a></li>
+                        </ul>
+                    </li>
+                    <li class="{{#if tips}}active{{/if}}" ><a href="tips.html">理財錦囊</a></li>
+                    <li class="{{#if program}}active{{/if}}"><a href="program.html">創業共融 青年創業計劃</a></li>
+                    <li class="{{#if contact}}active{{/if}}"><a href="contact.html">聯絡方法</a></li>
+                    <li class="{{#if download}}active{{/if}}"><a href="download.html">表格下載</a></li>
+                    <li class="{{#if reference}}active{{/if}}"><a href="reference.html">相關連結</a></li>
                 </ul>
             </div>
             <div class="content-container">
