@@ -200,7 +200,7 @@ h3 {
     border: #ccc 1px solid;
     box-shadow: 0 0 5px $arctic;
     height: auto;
-    height: 150px;
+    height: auto;
     width: 100%;
     margin-bottom: 30px;
     padding: 0;
@@ -213,9 +213,9 @@ h3 {
         box-sizing: border-box;
         width: 100%;
         padding: 20px;
-        padding-left: 170px;
-        margin-left: -150px;
-        height: 148px;
+        padding-left: 270px;
+        margin-left: -250px;
+        height: auto;
         letter-spacing: 0.1em;
         text-overflow: ellipsis;
         h3 {
@@ -229,7 +229,7 @@ h3 {
         span {
             display: inline-block;
             text-overflow: ellipsis;
-            height: 85px;
+            height: auto;
             line-height: 22px;
             overflow: hidden;
         }
@@ -238,8 +238,9 @@ h3 {
         vertical-align: top;
         box-sizing: border-box;
         display: inline-block;
-        width: 148px;
-        height: 148px;
+        width: 248px;
+        height: 400px;
+        margin-top: 50px;
         background-size: cover;
         background-position: center;
         background-color: #ccc;
@@ -257,9 +258,11 @@ div.main {
     letter-spacing: 0;
     z-index: 1;
     .photo-slider {
-        background: $arctic;
+        background: $arctic url(../img/big_banner.jpeg);
         width: 100%;
-        padding-bottom: 25%;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 35%;
         position: relative;
         box-shadow: $darkteal 0 0 13px;
     }
@@ -267,17 +270,20 @@ div.main {
         width: 100%;
         box-sizing: border-box;
         padding: 50px;
-        padding-left: 300px;
-        margin-left: -250px;
+        padding-left: 400px;
+        margin-left: -350px;
         display: inline-block;
         vertical-align: top;
     }
     .sub-menu {
-        width: 250px;
+        width: 350px;
         display: inline-block;
         vertical-align: top;
         padding: 10px;
         box-sizing: border-box;
+        &.in-page {
+            width: 250px;
+        }
         ul {
             border: #ccc 1px solid;
             width: 100%;

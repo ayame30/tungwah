@@ -39,26 +39,50 @@
     {{#if homepage}}
     <div class="main">
         <div class="photo-slider">
-            <ul class="bxslider">
-                {{#each photo-slider}}
-                <li style="background-image: url({{this}})"></li>
-                {{/each}}
-            </ul>
+
         </div>
         <div class="container">
             <div class="news-feed">
-                {{#each news-feed}}
                 <div class="card">
                     <div class="content">
-                        <h3>{{title}}</h3>
-                        <span>{{content}}</span>
+                        <h3>全港中學、大專及大學理財教育服務</h3>
+                        <span>
+                            <p>本中心相信自小建立健康、審慎的理財態度，配合實用的理財知識，對人的成長過程是非常重要的。</p>
+
+                            <p>故此，本中心一直致力向青少年推廣健康理財的訊息，自2005起為全港中學、大專及大學提供理財教育服務，至今已為超過二十五萬位青少年 提供不同形式的理財教育活動。</p>
+
+                            <p><b>理財教育及生涯規劃活動：</b></p>
+                            <ul>
+                                <li>理財智者大挑戰</li>
+                                <li>新世代「理財有道」教育講座</li>
+                                <li>Smart Kids 系列之 財教育體驗計劃</li>
+                                <li>儲蓄及投資活動</li>
+                                <li>「我有一個夢」生涯規劃講座</li>
+                                <li>策劃大未來」生涯規劃活動</li>
+                                <li>親子/家長理財工作坊</li>
+                            </ul>
+                        </span>
                     </div>
-                    <div class="img" style="background-image: url({{img-url}})"></div>
+                    <a href="./img/act1_1.jpeg"><div class="img" style="background-image: url(./img/act1_1.jpeg)"></div></a>
                 </div>
-                {{/each}}
+                <div class="card">
+                    <div class="content">
+                        <h3>理財有道 APP</h3>
+                        <span>
+                            <p>大家一起檢示自己過去一年的財務狀況，更要為未來一年做好計劃！</p>
+
+                            <p>讓我們用“有意義的金錢”開始個人財務管理。該應用程序是一個簡單和方便的工具，用戶照顧錢。您可以設計自己的預算計劃，使其健康，記錄您的收入和費用，它可以幫助您輕鬆監控您的財務狀況。同時，電子書和財務管理提示包括在應用程序，這可能會提高用戶的錢感。 “有意義的金錢”可能刺激用戶建立健全的財務管理習慣。</p>
+
+                            <p><a href="https://play.google.com/store/apps/details?id=org.tungwah.moneysense"><u>Download Android</u></a></p>
+                            <p><a href="https://itunes.apple.com/hk/app/making-sense-of-money/id1119214435?mt=8"><u>Download iOS</u></a></p>
+                        </span>
+                    </div>
+                    <a href="./img/act2_1.jpeg"><div class="img" style="background-image: url(./img/act2_1.jpeg)"></div></a>
+                </div>
             </div>
             <div class="sub-menu">
                 <ul>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftwghsfinancialeducation&tabs=timeline&width=318&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=265550956808871" width="318" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                     {{#each submenu}}
                     <li class="{{#if active}}active{{/if}}"><a href="{{url}}">{{text}}</a></li>
                     {{/each}}
@@ -69,27 +93,14 @@
     {{else}}
     <div class="main">
         <div class="container">
-            <div class="sub-menu">
+            <div class="sub-menu in-page" {{#if intro}}{{else}} style="display:none;" {{/if}}>
                 <ul>
-                    {{#each submenu}}
-                    <li class="{{#if active}}active{{/if}}"><a href="{{url}}">{{text}}</a></li>
-                    {{/each}}
-                    <li class="{{#if homepage}}active{{/if}}"><a href="/">首頁</a></li>
-                    <li class="{{#if intro}}active{{/if}} toggle-button"><a href="#">中心介紹</a>
-                        <ul class="toggle-menu">
-                            <li class="{{#if about_us}}active{{/if}}"><a href="about_us.html">中心簡介</a></li>
-                            <li class="{{#if counselling}}active{{/if}}"><a href="counselling.html">熱線 / 個案輔導</a></li>
-                            <li class="{{#if group_counselling}}active{{/if}}"><a href="group_counselling.html">小組輔導</a></li>
-                            <li class="{{#if service}}active{{/if}}"><a href="service.html">社區教育服務</a></li>
-                            <li class="{{#if support}}active{{/if}}"><a href="support.html">專業支援</a></li>
-                            <li class="{{#if crime}}active{{/if}}"><a href="crime.html">中介防騙諮詢</a></li>
-                        </ul>
-                    </li>
-                    <li class="{{#if tips}}active{{/if}}" ><a href="tips.html">理財錦囊</a></li>
-                    <li class="{{#if program}}active{{/if}}"><a href="program.html">創業共融 青年創業計劃</a></li>
-                    <li class="{{#if contact}}active{{/if}}"><a href="contact.html">聯絡方法</a></li>
-                    <li class="{{#if download}}active{{/if}}"><a href="download.html">表格下載</a></li>
-                    <li class="{{#if reference}}active{{/if}}"><a href="reference.html">相關連結</a></li>
+                    <li class="{{#if about_us}}active{{/if}}"><a href="about_us.html">中心簡介</a></li>
+                    <li class="{{#if counselling}}active{{/if}}"><a href="counselling.html">熱線 / 個案輔導</a></li>
+                    <li class="{{#if group_counselling}}active{{/if}}"><a href="group_counselling.html">小組輔導</a></li>
+                    <li class="{{#if service}}active{{/if}}"><a href="service.html">社區教育服務</a></li>
+                    <li class="{{#if support}}active{{/if}}"><a href="support.html">專業支援</a></li>
+                    <li class="{{#if crime}}active{{/if}}"><a href="crime.html">中介防騙諮詢</a></li>
                 </ul>
             </div>
             <div class="content-container">
